@@ -16,7 +16,7 @@ if __name__ == '__main__':
     logging.basicConfig()
 
     scheduler = BlockingScheduler()
-    scheduler.add_job(track, 'cron', year='*', month='*', day='*', week='*', day_of_week='*', hour='*', minute='0,10,20,30,40,50', second=0)
+    scheduler.add_job(track, 'cron', year='*', month='*', day='*', week='*', day_of_week='*', hour='*', minute='0,10,20,30,40,50', second=0, misfire_grace_time=1000)
     print('Press Ctrl+{0} to exit'.format('Break' if os.name == 'nt' else 'C'))
 
     try:

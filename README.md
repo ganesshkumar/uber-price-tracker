@@ -1,5 +1,5 @@
 # uber-tracker
-> To track uber estimate for your regular route
+> To track uber estimate for my regular route
 
 ## Setup
 
